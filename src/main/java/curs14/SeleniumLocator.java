@@ -102,13 +102,6 @@ public class SeleniumLocator extends BaseTest{
 		nameTextBox.sendKeys("My name!");
 	}
 	
-//	@Test(priority = 8)
-//	public void cssSelector() {
-//		
-//		//<input id="author" name="author" type="text" value="" size="30" required="">
-//		
-//		WebElement nameTextBox = driver.findElement(By.cssSelector("input[name='author']"));
-//		nameTextBox.sendKeys("My name!");
-//	}
+
 
 }
