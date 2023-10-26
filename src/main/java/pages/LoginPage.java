@@ -19,7 +19,7 @@ public class LoginPage {
 	public By passwordField = By.id("password");
 	public By submitButton = By.className("submit_button");
 	public By successLoginMsg = By.cssSelector("div[class*='sc_infobox_style_success']");
-	
+	public By rememberMeCheckbox = By.cssSelector("li input[type='checkbox']");
 	
 	
 	//metode specifice paginii sau functionalitatii pe care o reprezinta
