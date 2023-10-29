@@ -20,7 +20,6 @@ public class ContactUsTest extends BaseTest{
 		ContactsPage contact = new ContactsPage(driver);
 		contact.sendMessage("Roxana", "sturze_roxana@yahoo.com", "Test", "Test");
 		
-		Thread.sleep(3000);
 		assertEquals(contact.confirmationMessage(), "Thank you for your message. It has been sent.");
 		
 		

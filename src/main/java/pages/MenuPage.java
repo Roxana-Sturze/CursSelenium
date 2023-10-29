@@ -16,6 +16,9 @@ public class MenuPage {
 	
 	public By contactsLink = By.linkText("CONTACTS");
 	
+	public By singleAuthorLink = By.cssSelector("a[href='/margaret-robins/']");
+	
+	public By lifeInTheGardenBookLink = By.cssSelector("a[href='life-in-the-garden']");
 	
 	
 	public void navigateTo(By locator) {

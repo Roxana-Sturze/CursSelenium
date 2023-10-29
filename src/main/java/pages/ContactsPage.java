@@ -1,7 +1,11 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ContactsPage {
 	
@@ -30,6 +34,9 @@ public class ContactsPage {
 	
 	public String confirmationMessage() {
 		
+		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(confirmationMessage));  
 		//System.out.println(driver.findElement(confirmationMessage).getText());
 		return driver.findElement(confirmationMessage).getText();
 		
