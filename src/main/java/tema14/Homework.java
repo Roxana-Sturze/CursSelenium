@@ -1,4 +1,5 @@
 package tema14;
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
@@ -24,7 +25,7 @@ public class Homework extends BaseTest{
 	
 	//<input type="password" id="password" name="pwd" value="" placeholder="Password">
 	WebElement passwordBar = driver.findElement(By.id("password"));
-	assertTrue(!passwordBar.isDisplayed());
+	assertFalse(passwordBar.isDisplayed());
 	
 	loginTab.click();
 	assertTrue(loginBar.isDisplayed());
