@@ -20,6 +20,8 @@ public class MenuPage {
 	
 	public By lifeInTheGardenBookLink = By.cssSelector("a[href='life-in-the-garden']");
 	
+	public By shopLink = By.linkText("BOOKS");
+	
 	
 	public void navigateTo(By locator) {
 		

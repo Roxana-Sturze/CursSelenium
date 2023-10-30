@@ -22,7 +22,7 @@ public class ReviewTest extends BaseTest{
 		
 		driver.switchTo().alert().accept();
 		
-		book.sendReview("aaaa", "test", "test@test.com");
+		book.sendReview("q", "test", "test@test.com");
 		assertEquals("Your review is awaiting approval",book.approvalMessage());
 	}
 }

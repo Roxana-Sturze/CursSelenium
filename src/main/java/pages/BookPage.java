@@ -24,7 +24,7 @@ public class BookPage {
 	public By emailField =By.cssSelector("input[id='email']");
 	public By submitButton =By.cssSelector("input[name='submit']");
 	public By cookiesConsentCheckbox = By.cssSelector("input[id='wp-comment-cookies-consent']");
-	public By reviewAwaitingApproval = By.cssSelector("em [class='woocommerce-review__awaiting-approval']");
+	public By reviewAwaitingApproval = By.cssSelector("em[class='woocommerce-review__awaiting-approval']");
 	
 	
 	
@@ -41,6 +41,7 @@ public class BookPage {
 	}
 	
 	public void sendReview(String review, String name, String email) {
+		
 		clickReviewTab();
 		Random rand = new Random();
 		int num = rand.nextInt(5) + 1;
