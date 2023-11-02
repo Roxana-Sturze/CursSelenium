@@ -22,6 +22,8 @@ public class MenuPage {
 	
 	public By shopLink = By.linkText("BOOKS");
 	
+	public By eventsLink = By.linkText("EVENTS");
+	
 	
 	public void navigateTo(By locator) {
 		
