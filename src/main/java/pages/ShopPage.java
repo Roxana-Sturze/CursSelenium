@@ -15,6 +15,8 @@ public class ShopPage extends SeleniumWrappers{
 	
 	public By orderDropdown = By.name("orderby");
 	
+	public By sliderInitialPosition =By.cssSelector("span[style='left: 0%;']");
+	public By sliderFinalPosition =By.cssSelector("span[style='left: 100%;']");
 	
 	public void filterByValue(String value) {
 		
