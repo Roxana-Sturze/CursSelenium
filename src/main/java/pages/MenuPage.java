@@ -34,6 +34,10 @@ public class MenuPage {
 	
 	public By searchInput =By.xpath("(//input[contains(@class,'search_field')])[1]");
 	
+	public By userLink =By.cssSelector("span[class='user_name']");
+	
+	public By userSettingsLink = By.xpath("//a[contains(@class, 'icon-cog')]");
+	
 	
 	
 	public void navigateTo(By locator) {

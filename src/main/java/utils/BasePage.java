@@ -8,6 +8,7 @@ import pages.GenericEventPage;
 import pages.LoginPage;
 import pages.MenuPage;
 import pages.ShopPage;
+import pages.UserPage;
 
 public class BasePage  extends SeleniumWrappers{
 
@@ -23,6 +24,7 @@ public class BasePage  extends SeleniumWrappers{
 	public ContactsPage contacts = new ContactsPage(driver);
 	public EventsPage events = new EventsPage(driver);
 	public GenericEventPage genericEvent = new GenericEventPage(driver);
+	public UserPage user = new UserPage(driver);
 	
 	
 
