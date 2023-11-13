@@ -2,13 +2,13 @@ package tests;
 
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
-import pages.LoginPage;
-import pages.MenuPage;
+//
+//import pages.LoginPage;
+//import pages.MenuPage;
 import utils.BaseTest;
-import utils.SeleniumWrappers;
+//import utils.SeleniumWrappers;
 
 public class IsSelectedExample extends BaseTest{
 	

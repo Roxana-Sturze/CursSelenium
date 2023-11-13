@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import pages.ShopPage;
+//import pages.ShopPage;
 import utils.BaseTest;
 
 public class ActionClassExample extends BaseTest{

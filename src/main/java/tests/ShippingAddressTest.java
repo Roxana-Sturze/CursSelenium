@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import pages.MenuPage;
-import pages.UserPage;
+//import pages.UserPage;
 import utils.BaseTest;
 
 public class ShippingAddressTest extends BaseTest{
@@ -25,7 +25,7 @@ public class ShippingAddressTest extends BaseTest{
 		Thread.sleep(2000);
 		app.menu.navigateTo(app.menu.userSettingsLink);
 		
-		UserPage user = new UserPage(driver);
+		//UserPage user = new UserPage(driver);
 		
 		app.user.click(app.user.addressLink);
 		app.user.click(app.user.addAddressButton);

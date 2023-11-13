@@ -30,6 +30,7 @@ public class MenuPage {
 	public By eventsLink = By.linkText("EVENTS");
 	
 	public By blogLink = By.linkText("BLOG");
+	public By classicBlogLink = By.xpath("(//a[contains(@href, 'classic')])[1]");
 	
 	public By aboutLink = By.linkText("ABOUT");
 	

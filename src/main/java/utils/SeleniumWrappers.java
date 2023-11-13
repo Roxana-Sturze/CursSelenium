@@ -1,6 +1,7 @@
 package utils;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -56,6 +57,10 @@ public class SeleniumWrappers extends BaseTest{
 		waitForElementToBeVisible(locator);
 		return driver.findElement(locator);
 	
+	}
+	
+	public List<WebElement> returnWebElements(By locator) {
+		return driver.findElements(locator);
 	}
 
 	

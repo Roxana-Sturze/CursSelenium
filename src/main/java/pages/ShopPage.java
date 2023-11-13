@@ -20,6 +20,17 @@ public class ShopPage extends SeleniumWrappers{
 	
 	public By cookingWithLoveBookLink = By.xpath("(//a[contains(@href, 'cooking')])[6]");
 	
+	public By cookbooksLink = By.xpath("//a[contains(@href, 'cookbooks')]");
+	public By saleIcon = By.xpath("//span[contains(@class, 'onsale')]");
+	
+	public By genericBook = By.xpath("//h2[contains(@class, 'product__title')]/a[contains(@href, 'shop')]");
+	
+	
+	public int listLength(By locator) {
+		
+		return driver.findElements(locator).size();
+	}
+	
 	public void filterByValue(String value) {
 		
 		Select selectObj = new Select(returnWebElement(orderDropdown));
@@ -44,6 +55,11 @@ public class ShopPage extends SeleniumWrappers{
 		
 		Select selectObj = new Select(returnWebElement(orderDropdown));
 		selectObj.selectByIndex(index);
+	
+	}
+	
+	public void checkSale() {
+		
 	
 	}
 }
