@@ -9,7 +9,7 @@ import utils.BaseTest;
 
 public class ScrollExample extends BaseTest{
 	
-	//@Test(priority=1)
+	@Test(priority=1)
 	public void scrollByPixel() {
 		
 		//JS scroll
@@ -22,7 +22,7 @@ public class ScrollExample extends BaseTest{
 		action.scrollByAmount(0, 2000).perform();
 	}
 	
-	//@Test(priority=2)
+	@Test(priority=2)
 	public void scrollToElement() throws InterruptedException {
 		
 		

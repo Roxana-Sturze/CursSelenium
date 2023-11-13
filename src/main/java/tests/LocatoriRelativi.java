@@ -19,7 +19,7 @@ public class LocatoriRelativi extends BaseTest{
 	 * 
 	 */
 	
-	@Test
+	@Test(groups = "ProductFunctionality")
 	public void locaatoriRelativi() {
 		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;

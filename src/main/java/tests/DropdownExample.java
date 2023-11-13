@@ -12,7 +12,7 @@ import utils.BaseTest;
 public class DropdownExample extends BaseTest {
 	
 	
-	@Test(priority=1)
+	@Test(priority=1, groups = "ProductFunctionality")
 	public void selectByValueTest() {
 		
 		app.click(app.menu.shopLink);
@@ -23,7 +23,7 @@ public class DropdownExample extends BaseTest {
 		
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, groups = "ProductFunctionality")
 	public void selectByTextTest() {
 		
 		app.click(app.menu.shopLink);
@@ -33,7 +33,7 @@ public class DropdownExample extends BaseTest {
 		
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3, groups = "ProductFunctionality")
 	public void selectByIndexTest() {
 		
 		app.click(app.menu.shopLink);

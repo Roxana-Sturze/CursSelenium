@@ -11,7 +11,7 @@ public class BaseTest {
 	public WebDriver driver;
 	public BasePage app;
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void setup() {
 		
 		driver = new ChromeDriver();
@@ -24,7 +24,7 @@ public class BaseTest {
 	}
 	
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void tearDown() throws InterruptedException {
 		
 	
