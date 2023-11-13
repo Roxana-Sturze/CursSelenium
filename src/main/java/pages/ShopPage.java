@@ -18,6 +18,8 @@ public class ShopPage extends SeleniumWrappers{
 	public By sliderInitialPosition =By.cssSelector("span[style='left: 0%;']");
 	public By sliderFinalPosition =By.cssSelector("span[style='left: 100%;']");
 	
+	public By cookingWithLoveBookLink = By.xpath("(//a[contains(@href, 'cooking')])[6]");
+	
 	public void filterByValue(String value) {
 		
 		Select selectObj = new Select(returnWebElement(orderDropdown));

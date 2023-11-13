@@ -8,15 +8,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BookPage {
-	
-	public WebDriver driver;
+import utils.SeleniumWrappers;
+
+public class BookPage extends SeleniumWrappers{
 	
 	public BookPage(WebDriver driver) {
-		
-		this.driver =driver;
-		
+		super(driver);
 	}
+
+//	public WebDriver driver;
+	
+//	public BookPage(WebDriver driver) {
+//		
+//		this.driver =driver;
+//		
+//	}
 	
 	public By reviewTab = By.cssSelector("a[href='#tab-reviews']");
 	public By yourReviewField = By.cssSelector("textarea[id='comment']");
@@ -25,6 +31,14 @@ public class BookPage {
 	public By submitButton =By.cssSelector("input[name='submit']");
 	public By cookiesConsentCheckbox = By.cssSelector("input[id='wp-comment-cookies-consent']");
 	public By reviewAwaitingApproval = By.cssSelector("em[class='woocommerce-review__awaiting-approval']");
+	
+	public By maximizeImageIcon = By.xpath("//a[contains(@class, 'woocommerce-product-gallery__trigger')]");
+	public By bookTitle =By.xpath("//h1[contains(@class, 'product_title')]");
+	public By bookPrice = By.xpath("(//span[contains(@class, 'amount')])[5]");
+	public By bookDescription = By.xpath("//div[contains(@class, 'short-description')]");
+	public By selectQuantity = By.xpath("//input[contains(@name, 'quantity')]");
+	public By addToCartButton = By.xpath("//button[contains(@name, 'add-to-cart')]");
+	public By bookCategory = By.xpath("(//a[contains(@href, 'product-category')])[3]");
 	
 	
 	

@@ -1,7 +1,12 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MenuPage {
 
@@ -38,6 +43,10 @@ public class MenuPage {
 	
 	public By userSettingsLink = By.xpath("//a[contains(@class, 'icon-cog')]");
 	
+	public By facebookIcon = By.xpath("(//a[contains(@href, 'facebook')])[1]");
+	public By twitterIcon = By.xpath("(//a[contains(@href, 'twitter')])[1]");
+	public By instagramIcon = By.xpath("(//a[contains(@href, 'instagram')])[1]");
+	
 	
 	
 	public void navigateTo(By locator) {
@@ -46,5 +55,12 @@ public class MenuPage {
 		
 	}
 	
+	public WebElement returnWebElement (By locator) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		return driver.findElement(locator);
+	
+	}
 
 }
